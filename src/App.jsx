@@ -8,6 +8,12 @@ function App() {
   const [indexPhrase, setIndexPhrase] = useState(0);
   const [backgroundIndex, setBackgroundIndex] = useState(0);
 
+  const backgrounds = [
+    { img: '/public/images/bg-blue.jpg' },
+    { img: '/public/images/bg-green.jpg' },
+    { img: '/public/images/bg-pink.jpg' },
+    { img: '/public/images/bg-yellow.jpg' },
+  ];
 
   const changePhrase = () => {
     /* Background random image */
