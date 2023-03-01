@@ -1,0 +1,18 @@
+[
+    {
+        "img" : "/src/assets/bg-blue.jpg",
+        "name" : "bg-blue"
+    },
+    {
+      "img": "/src/assets/bg-pink.jpg",
+      "name": "bg-pink"
+    },
+    {
+      "img": "/src/assets/bg-yellow.jpg",
+      "name": "bg-yellow"
+    },
+    {
+      "img": "/src/assets/bg-green.jpg",
+      "name": "bg-green"
+    }
+]
