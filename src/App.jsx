@@ -3,22 +3,31 @@ import { useState } from 'react';
 import Phrase from './components/Phrase';
 import phrases from './assets/phrases.json';
 import backgrounds from './assets/background.json';
+import { getRandomNumber as random } from './utils/getRandom';
 
 function App() {
-  const [indexPhrase, setIndexPhrase] = useState(0);
-  const [backgroundIndex, setBackgroundIndex] = useState(0);
+  const [indexPhrase, setIndexPhrase] = useState(random(0, phrases.length - 1));
+  const [backgroundIndex, setBackgroundIndex] = useState(
+    random(0, backgrounds.length - 1),
+  );
 
   const changePhrase = () => {
     /* Background random image */
-    const newBackgroundIndex = Math.floor(Math.random() * backgrounds.length);
+    let newBackgroundIndex = random(0, backgrounds.length - 1);
+    while (newBackgroundIndex === backgroundIndex) {
+      newBackgroundIndex = random(0, backgrounds.length - 1);
+    }
     setBackgroundIndex(newBackgroundIndex);
 
     /* random Phrases  */
-    const newPhrase = Math.floor(Math.random() * phrases.length);
-
+    let newPhrase = random(0, phrases.length - 1);
+    while (newPhrase === indexPhrase) {
+      newPhrase = random(0, phrases.length - 1);
+    }
     setIndexPhrase(newPhrase);
   };
 
+  /* Background images */
   const backgroundImg = {
     backgroundImage: `url(${backgrounds[backgroundIndex].img})`,
   };
