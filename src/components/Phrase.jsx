@@ -4,7 +4,7 @@ import img from '../assets/bg-p.png';
 
 const Phrase = ({ phrase, changePhrase }) => {
   return (
-    <section className="text-2xl mt-32">
+    <section className="text-2xl mt-16">
       <div
         className="w-11/12 h-64 mx-auto flex justify-center items-center px-10 bg-center bg-no-repeat bg-[length:500px] md:bg-[length:650px]"
         style={{
@@ -16,7 +16,7 @@ const Phrase = ({ phrase, changePhrase }) => {
       <div>
         <Button handleClick={changePhrase} />
       </div>
-      <p className="mt-24 bg-white bg-opacity-40 w-full px-3 py-2 mx-auto">
+      <p className="mt-16 bg-white bg-opacity-40 w-full px-3 py-2 mx-auto">
         Fuente: {phrase.author}
       </p>
     </section>

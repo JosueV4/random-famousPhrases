@@ -26,13 +26,18 @@ function App() {
     setIndexPhrase(newPhrase);
   };
 
-  const backgroundImg = {
+/*   const backgroundImg = {
     backgroundImage: `url(${backgrounds[backgroundIndex].img})`,
-  };
+  }; */
 
   return (
-    <div className="App bg-cover bg-center min-h-full text-center" style={backgroundImg}>
-      <h1 className="text-5xl	text-white pt-12 max-w-md  mx-auto">
+    <div
+      className="App bg-cover bg-center min-h-full text-center"
+      style={{
+        backgroundImage: `url(${backgrounds[backgroundIndex].img})`,
+      }}
+    >
+      <h1 className="text-5xl	text-white pt-20 max-w-md  mx-auto">
         GALLETAS DE LA FORTUNA
       </h1>
       <Phrase phrase={phrases[indexPhrase]} changePhrase={changePhrase} />
