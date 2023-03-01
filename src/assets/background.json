@@ -1,18 +1,18 @@
 [
     {
-        "img" : "/public/images/bg-blue.jpg",
+        "img" : "https://i.postimg.cc/7PNxHBzm/bg-blue.jpg",
         "name" : "bg-blue"
     },
     {
-      "img": "/public/images/bg-pink.jpg",
+      "img": "https://i.postimg.cc/TYYTprqG/bg-pink.jpg",
       "name": "bg-pink"
     },
     {
-      "img": "/public/images/bg-yellow.jpg",
+      "img": "https://i.postimg.cc/ncRp7C0m/bg-yellow.jpg",
       "name": "bg-yellow"
     },
     {
-      "img": "/public/images/bg-green.jpg",
+      "img": "https://i.postimg.cc/3xk7ZYcc/bg-green.jpg",
       "name": "bg-green"
     }
 ]

@@ -11,7 +11,9 @@ const Phrase = ({ phrase, changePhrase }) => {
           backgroundImage: `url(${img})`,
         }}
       >
-        <p className="px-14 text-lg min-w-96 md:w-10/12 md:px-10 lg:w-6/12 lg:px-0">{phrase.quote}</p>
+        <p className="px-14 text-lg min-w-96 md:w-10/12 md:px-10 lg:w-6/12 lg:px-0">
+          {phrase.quote}
+        </p>
       </div>
       <div>
         <Button handleClick={changePhrase} />
